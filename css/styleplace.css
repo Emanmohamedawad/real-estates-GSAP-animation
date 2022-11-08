@@ -1,0 +1,189 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+@font-face {
+  font-family: w;
+  src: url(./webfonts/fonts/WanoQuin-ExtraBold.otf);
+}
+body {
+  color: #fff;
+  font-family: "Lato", sans-serif;
+  overflow-x: hidden;
+  background-color: #141414;
+}
+
+.navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 1rem 3rem;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  z-index: 1000;
+}
+
+.navbar span {
+  position: absolute;
+  bottom: 0;
+  height: 2px;
+  width: 50px;
+  background: -webkit-gradient(linear, left top, right top, from(transparent), to(#fff));
+  background: linear-gradient(90deg, transparent, #fff);
+  -webkit-animation: animate 5s infinite linear;
+          animation: animate 5s infinite linear;
+}
+
+@-webkit-keyframes animate {
+  0% {
+    left: 0;
+    -webkit-transform: translate(-100%);
+            transform: translate(-100%);
+  }
+  100% {
+    left: 100%;
+    -webkit-transform: translate(0%);
+            transform: translate(0%);
+  }
+}
+
+@keyframes animate {
+  0% {
+    left: 0;
+    -webkit-transform: translate(-100%);
+            transform: translate(-100%);
+  }
+  100% {
+    left: 100%;
+    -webkit-transform: translate(0%);
+            transform: translate(0%);
+  }
+}
+.logo {
+  text-transform: capitalize;
+  font-size: 30px;
+  cursor: pointer;
+  font-family: w;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: #fff;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #ccc;
+}
+
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 5rem;
+  text-transform: uppercase;
+  font-weight: 100;
+}
+
+.btn {
+  font-weight: 500;
+  text-transform: uppercase;
+  cursor: pointer;
+  color: #fff;
+}
+
+.btn:hover {
+  color: #ccc;
+}
+
+h1 {
+  font-size: 10rem;
+  font-family: "Bebas Neue";
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 1;
+  margin: 0;
+  color: white;
+}
+
+section {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+  grid-template-columns: repeat(3, 1fr);
+  height: 100vh;
+  margin: 0 auto;
+}
+
+.gallery {
+  height: 200vh;
+}
+
+.img {
+  width: 100%;
+  height: 700px;
+  cursor: pointer;
+  position: relative;
+  background-size: cover;
+  z-index: -1;
+}
+.img:nth-of-type(1) {
+  background-image: url("../images/img1.jpg");
+}
+.img:nth-of-type(2) {
+  background-image: url("../images/img2.jpg");
+}
+.img:nth-of-type(4) {
+  background-image: url("../images/img3.jpg");
+}
+.img:nth-of-type(3) {
+  background-image: url("../images/img4.jpg");
+}
+.img:nth-of-type(5) {
+  background-image: url("../images/img5.jpg");
+}
+.img:nth-of-type(6) {
+  background-image: url("../images/img6.jpg");
+}
+.img:nth-of-type(7) {
+  background-image: url("../images/img7.jpg");
+}
+.img:nth-of-type(8) {
+  background-image: url("../images/img8.jpg");
+}
+.img:nth-of-type(9) {
+  background-image: url("../images/img1.jpg");
+}
+.img:before {
+  content: "";
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  z-index: 4;
+  top: 0;
+  left: 0;
+  border-right: 1px solid black;
+}
+
+.line {
+  border-right: 1px solid black;
+}

@@ -1,0 +1,278 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    // background: url(../images/bg.jpg);
+    background-size: cover;
+    background-position: center;
+    color: #3d5a80;
+    font-family: Aquire;
+
+    .navbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1rem 3rem;
+        background-color: #000;
+        position: fixed;
+        top: 0;
+        width: 100vw;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        z-index: 1000;
+    }
+
+    .navbar span {
+        position: absolute;
+        bottom: 0;
+        height: 2px;
+        width: 50px;
+        background: linear-gradient(90deg, transparent, #fff);
+        animation: animate 5s infinite linear;
+    }
+
+    @keyframes animate {
+        0% {
+            left: 0;
+            transform: translate(-100%);
+        }
+
+        100% {
+            left: 100%;
+            transform: translate(0%);
+        }
+    }
+
+    .logo {
+        text-transform: capitalize;
+        font-size: 30px;
+        color: #fff;
+        cursor: pointer;
+        font-family: w;
+    }
+
+    li {
+        list-style: none;
+    }
+
+    a {
+        color: #fff;
+        font-weight: 500;
+        text-decoration: none;
+    }
+
+    a:hover {
+        color: #ccc;
+    }
+
+    .menu {
+        display: flex;
+        gap: 5rem;
+        text-transform: uppercase;
+        font-weight: 100;
+    }
+
+    .btn {
+        font-weight: 500;
+        text-transform: uppercase;
+        cursor: pointer;
+        color: #fff;
+    }
+
+    .btn:hover {
+        color: #ccc;
+    }
+}
+
+// CONTAINER
+.container {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+
+    //   LOADER START
+    .loader {
+        position: absolute;
+        top: 0px;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        color: rgb(146, 145, 145);
+
+        h1 {
+            font-size: 200px;
+            font-family: Cosi Azure;
+            position: absolute;
+            top: 2px;
+            left: -500px;
+        }
+
+        h2 {
+            font-size: 250px;
+            font-family: Cosi Azure;
+            position: absolute;
+            bottom: -70px;
+            right: -130px;
+        }
+    }
+
+    // LOADER FINISH
+    // text code
+    img {
+        width: 200px;
+    }
+
+    // WRAPPER START
+    .wrapper {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        padding: 30px;
+        padding-top: 120px;
+
+        .content {
+            .h1 {
+                width: 100%;
+                overflow: hidden;
+
+                h1 {
+                    font-size: 130px;
+                    line-height: 90%;
+                    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.4),
+                        2px 2px 3px rgba(0, 0, 0, 0.4), 2px 2px 4px rgba(0, 0, 0, 0.4),
+                        2px 2px 5px rgba(0, 0, 0, 0.4), 2px 2px 5px rgba(0, 0, 0, 0.4),
+                        2px 2px 5px rgba(0, 0, 0, 0.4), 2px 2px 5px rgba(0, 0, 0, 0.6),
+                        2px 2px 5px rgba(0, 0, 0, 0.6), 2px 2px 5px rgba(0, 0, 0, 0.6),
+                        2px 2px 5px rgba(0, 0, 0, 0.6), 2px 2px 5px rgba(0, 0, 0, 0.6),
+                        2px 2px 5px rgba(0, 0, 0, 0.6), 2px 2px 3px rgba(0, 0, 0, 0.6);
+                }
+            }
+
+            p {
+                font-family: "Poppins", sans-serif;
+                font-size: 17px;
+                line-height: 109%;
+                width: 70%;
+                line-height: 30px;
+                padding-top: 20px;
+            }
+
+            a {
+                display: inline-block;
+                border: 3px solid #3d5a80;
+                border-radius: 19px;
+                padding: 7px 20px;
+                color: #000;
+                font-size: 19px;
+                margin: 30px 0px;
+                text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.4),
+                    2px 2px 3px rgba(0, 0, 0, 0.4), 2px 2px 4px rgba(0, 0, 0, 0.4),
+                    2px 2px 5px rgba(0, 0, 0, 0.4), 2px 2px 5px rgba(0, 0, 0, 0.6);
+                transition: 0.5s;
+
+                &:hover {
+                    background: #3d5a80;
+                    border: 3px solid #3d5a80;
+                    color: rgb(37, 36, 36);
+                    text-shadow: none;
+                }
+            }
+
+            .social {
+                ul li {
+                    display: inline-block;
+
+                    a {
+                        padding: 0px 10px;
+                        border-radius: 0px;
+                        color: #000;
+                        border: none;
+                        border-right: 3px solid #3d5a80;
+                        text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.4),
+                            2px 2px 3px rgba(0, 0, 0, 0.4),
+                            2px 2px 4px rgba(0, 0, 0, 0.4),
+                            2px 2px 5px rgba(0, 0, 0, 0.4),
+                            2px 2px 5px rgba(0, 0, 0, 0.6);
+                    }
+                }
+            }
+        }
+
+        // IMG SECTION
+        .img {
+            width: 100%;
+            position: relative;
+            margin-left: 35px;
+
+            .subimg {
+                width: 86%;
+                height: 360px;
+                color: #000;
+                background: #fff;
+                position: absolute;
+                margin: 10px;
+                box-shadow: 0px 0px 15px #000, 0px 0px 15px #000;
+                overflow: hidden;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+
+                &.one .bg {
+                    width: 100%;
+                    height: 100%;
+                    background: rgb(37, 37, 37);
+                    position: absolute;
+                    z-index: 9;
+                    top: 0;
+                }
+
+                &.two {
+                    width: 64%;
+                    height: 250px;
+                    top: 120px;
+                    position: absolute;
+                    left: -50px;
+
+                    .bg2 {
+                        width: 100%;
+                        height: 100%;
+                        background: rgb(37, 37, 37);
+                        position: absolute;
+                        z-index: 9;
+                        top: 0;
+                    }
+                }
+
+                &.three {
+                    width: 40%;
+                    height: 170px;
+                    bottom: 50px;
+                    position: absolute;
+                    right: 130px;
+
+                    .bg3 {
+                        width: 100%;
+                        height: 100%;
+                        background: rgb(37, 37, 37);
+                        position: absolute;
+                        z-index: 9;
+                        top: 0;
+                    }
+                }
+            }
+        }
+    }
+
+    // WRAPPER FINISH
+}
